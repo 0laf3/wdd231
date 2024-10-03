@@ -1,0 +1,177 @@
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 300px;
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        .hero {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 100%;
+            margin-bottom: 20px;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .business-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .business-card img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .business-card .info {
+            flex: 1;
+        }
+
+        .business-card h3 {
+            margin-top: 0;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-links img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .business-card .info ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .business-card .info li {
+            margin-bottom: 5px;
+        }
+
+        .weather {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .weather img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .weather h3 {
+            margin-top: 0;
+        }
+
+        .weather p {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        .weather-forecast {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .weather-forecast h3 {
+            margin-top: 0;
+        }
+
+        .weather-forecast p {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .weather-forecast ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .weather-forecast li {
+            margin-bottom: 5px;
+        }

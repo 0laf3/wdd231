@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Huambo Chamber of Commerce is a business chamber that aims to promote  cooperation among businesses in the Huambo.">
+    <meta name="keywords"
+        content="business chamber, Huambo Chamber of Commerce, hcc, chamber of commerce, chamber of commerce Huambo, Huambo Chamber of Commerce, Luanda, Angola">
+    <meta name="author" content="João Sebastião Capindissa">
+    <meta name="og:description"
+        content="Huambo Chamber of Commerce is a business chamber that aims to promote cooperation among businesses in the Huambo.">
+    <meta property="og:title" content="Huambo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://0laf3.github.io/wdd231/chamber/images/hcc-log.png">
+    <meta property="og:url" content="https://0laf3.github.io/wdd231/Chamber/directory.html">
+
+    <meta name="twitter:card"
+        content="Huambo Chamber of Commerce is a business chamber that aims to promote  cooperation among businesses in the Huambo." />
+    <meta name="twitter:site" content="@hcc" />
+    <meta name="twitter:title" content="Huambo Chamber of Commerce" />
+    <meta name="twitter:description"
+        content="Huambo Chamber of Commerce is a business chamber that aims to promote  cooperation among businesses in the Huambo." />
+    <meta name="twitter:image" content="https://0laf3.github.io/wdd231/chamber/images/hcc-log.png" />
+
+    <!-- Link images for android-chrome icon, apple touch and others divices -->
+    <link rel="android-chrome-192x192" href="images/android-chrome-192x192.png">
+    <link rel="android-chrome-512x512" href="images/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/directory.css">
+
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+
+    <title>Huambo Chamber of Commerce</title>
+</head>
+
+<body>
+    
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/hcc-logo-symbol-only-sm.png" alt="Huambo Chamber of Commerce"
+                    height="70" width="70" loading="lazy"></a>
+            <h1>Huambo <span>Chamber of Commerce</span></h1>
+        </div>
+        <button id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="navigation">☰</button>
+        <nav id="navigation" class="collapsed" aria-hidden="true">
+            <a href="/index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Companies Directory</h2>
+        <p class="sub-heading">Huambo Chamber of Commerce (HCC) is a prominent business chamber,
+            was created in 2024, on the initiative of 3 public and private companies, with the aim of bringing together the 
+            business class to defend their interests, and sharing efforts with the State with a view to promote and strengthen economic 
+            and commercial relations with the rest of the world.
+        </p>
+        <p class="sub-heading">
+            Here is a detailed list of the esteemed companies that are active members of the chamber, each playing a vital role 
+            in advancing the Alliance's vision of collective success:
+
+        <!-- Grid view -->
+        <div id="view-options">
+            <button id="grid-view" aria-label="Grid view" aria-pressed="true" class="active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor"
+                    class="bi bi-grid-3x3-gap" viewBox="0 0 16 16">
+                    <path
+                        d="M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z" />
+                </svg>
+            </button>
+             <!--list view -->
+            <button id="list-view" aria-label="List view" aria-pressed="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor"
+                    class="bi bi-list-ul" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                </svg>
+            </button>
+        </div>
+
+      
+        <div id="companies" class="grid"></div
+>
+    </main>
+    <footer>
+        <div id="address-contact">
+            <p><strong>Huambo Chamber of Commerce</strong></p>
+            <p>Huambo Cidade Alta</p>
+            <p>Email: <a href="mailto:hcc@hcc.co.ao">hcc@hcc.co.ao</a></p>
+            <p>Phone: (930) 402-484</p>
+        </div>
+        <div id="social-media">
+
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/4375133_logo_youtube_icon.svg" alt="Youtube" loading="lazy" width="30" height="30"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/icons8-facebook-novo-30.svg" alt="Facebook" loading="lazy" width="30" height="30"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/317749_social_media_tweet_twitter_social_icon.svg" alt="Tweeter" loading="lazy" width="30" height="30"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/317750_linkedin_icon.svg" alt="Linkedin" loading="lazy" width="30" height="30"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/icons8-instagram-30.svg" alt="Instagram" loading="lazy" width="30" height="30"></a>
+
+        </div>
+        <div id="legal">
+            <p>WDD231 Project class</p>
+            <p>João Sebastião Capindissa</p>
+            <p>&copy; <span id="currentYear"></span> Huambo Chamber of Commerce</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

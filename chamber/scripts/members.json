@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Sonangol AP.",
+        "address": "Mutamba Luanda",
+        "phone": "000-000-000",
+        "website": "https://www.sonangol.co.ao/",
+        "image": "images/companies/Sonangol_Logo_Horizontal_Preto4_Footer-2.png",
+        "level": 1,
+        "other": "Sonangol plays a major role in the local and Angola economy."
+    },
+    {
+        "name": "Sistec S.A",
+        "address": "Avenida Che Guevara nº 138",
+        "phone": "225 800 800",
+        "website": "https://www.sistec.co.ao/",
+        "image": "images/companies/sistec.svg",
+        "level": 2,
+        "other": "is an Angolan company that operates in the technology, telecommunications and home products segments."
+    },
+    {
+        "name": "Ensa",
+        "address": "91011 Oak St, Anytown, USA",
+        "phone": "000-000-000",
+        "website": "https://www.ensa.co.ao/",
+        "image": "images/companies/ensa.png",
+        "level": 3,
+        "other": "there is a star always by your side."
+    }
+   
+]
