@@ -5,10 +5,9 @@
 
     /* colors */
     --primary-color: #556970;
-    --secondary-color: #556970;
-    --tertiary-color: #cfcc49;
-    --light-color:#fcf804;
-    --neutral-color: #dedc73  ;
+    --secondary-color: #266a83;
+    --light-color:#D8CFAF;
+    --neutral-color: #E6B89C  ;
 
     --light-text: #F7FFF7;
     --dark-text: #292F36;
@@ -23,6 +22,11 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+  nav{
+    background-color: var(--primary-color);
+    height:50px;
+    grid-template-rows: 1fr;
+  }
 header {
     color: var(--light-text);
     background-color: var(--primary-color);
@@ -33,23 +37,31 @@ header {
 }
 #menu{
     display: none;
+    border-radius: 30px;
 }
 #menu:hover{
     background-color: var(--secondary-color);
 }
 #menu.show::before{
     content: "x";
+   
 }
 #menu::before{
-    content: "≡";
+    content: "☰";
+    justify-self: center;
 }
 .navigation{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 .navigation li{
     list-style: none;
     margin: 0 auto;
-    max-width: 760px;
+    flex-grow: 1;
+    flex-basis:0;
 }
 .navigation a{
     display: block;
@@ -59,14 +71,22 @@ header {
     transition: 0.5s;
     font-size: clamp(1rem, 2vmin, 1.5rem);  
 }
-
-
+a{
+    color:  var(--light-text);
+}
 .navigation a:hover, .navigation a:active{
     color: var(--light-text);
     background-color: var(--neutral-color);
     font-size:clamp(2rem, 2vmin, 1.5rem);
 }
 .container-header{
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items:center;    
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+.container-student{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -80,19 +100,17 @@ header {
 }
 .container-section p{
     margin: 1rem;
-    text-align: justify;
+    text-align: left;
     font-family: var(--font-body);
 }
 .photo {
     border-radius: 1em;
     transform: rotate(-5deg);
-    width: 15rem;
-    height: 20rem;
+    width: 10rem;
+    height: 10rem;
     margin: 1em;
   }
-img{
-    width: 100%;
-}
+
 section{
     background-color: var(--light-color);
     padding-top: 1.5rem;
@@ -116,8 +134,8 @@ main{
 #course-list{
     grid-column: 1/-1;  
 }
-#course-list p{
-    text-align: center;
+#course-list p:first-of-type{
+    padding: 5px;
 }
 .title{
     background-color: var(--primary-color);
@@ -143,7 +161,11 @@ main{
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    cursor: pointer;
 }
+.course:hover {
+    filter: brightness(0.8);
+  }
 .incomplete{
     background-color: var(--neutral-color);
     color: var(--dark-text);
@@ -156,8 +178,8 @@ main{
     gap: 1%;
 }
 .active, .activePage{
-    color: var(--primary-color);
-    background-color: var(--light-text);
+    color: var(--light-text);
+    background-color: var(--secondary-color);
 }
 button{
     padding: 0.5rem 1rem;
@@ -167,6 +189,7 @@ button{
     font-family: var(--font-header);
     font-weight: 900;
     border-radius: 15%;
+    cursor: pointer;
 }
 .container-buttons{
     display: flex;
@@ -174,6 +197,43 @@ button{
     justify-content: center;
     align-items: center;
 }
+#course-details{
+    margin: 10% auto;
+    width: 80%;
+    max-width: 350px;
+    background-color: var(--light-color);
+    padding: 30px;
+    border: 0;
+    border-radius: 5px;
+    text-align: justify;
+}
+#course-details h3{
+    background-color: var(--secondary-color);
+    padding: 5px;
+    font-family: var(--font-header);
+}
+dialog > button {
+    margin: 20px auto;
+  }
+  dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+ #closeModal {
+    display: block;
+    margin: 40px auto;
+    border: 0;
+    border-radius: 8px;
+    padding: 7px 32px;
+    font-size: 14px;
+    font-weight: 600;
+    background: var(--primary-color);
+    cursor: pointer;
+    color: var(--light-text);
+    transition: all 240ms linear;
+  } 
+  #closeModal:hover{
+    filter: brightness(0.8);
+  }
 
 @media screen and (max-width: 900px){
     .content{
@@ -184,32 +244,36 @@ button{
         display: block;
         flex: 1 1 100%;
     }
-    .navigation li{
-        display: none;
+    nav{
+        height:auto;
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-out;
+      }
+    nav ul {
+        overflow: hidden;
+    }
+    nav.show{
+        grid-template-rows: 1fr;
     }
     .navigation a {
         text-align: left;
     }
     #menu{
         display: block;
-        position: absolute;
-        top: 0.5rem;
-        right: 1rem;
-        margin-top: 0.25%;
         font-size: 2rem;
         font-weight: 700;
         text-decoration: none;
-        background-color: var(--secondary-color);
-        color: var(--primary-color);
+        background: none;
+        color: var(--light-text);
+        cursor: pointer;
+        padding: 0.25rem 2vw;
     }
-    .show li{
-        display: block;
-    }
-    .container-header{
+    .container-student{
         flex-direction: column;
         justify-content: space-around;
     }
-    .container-header h1{
+    .container-student h1{
         text-align: center;
     }
     .container-section{

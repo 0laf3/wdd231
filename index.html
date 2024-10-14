@@ -17,25 +17,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:wght@500&display=swap" rel="stylesheet">
-    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/hamburguer-menu.js"></script>
+    <script defer src="scripts/courses-display.js"></script>
+    <script defer src="scripts/getDates.js"></script>
+    
     
 </head> 
 <body>
     <header>
         <div class="container-header">
+            <a id="menu" href="#"></a>
+        </div>
+        <div class="container-student">
             <div><img class="photo" src="images/IMG_20180531_100835.jpg" alt="Photo João Sebastião Capindissa "></div>
             <h1>João Sebastião Capindissa</h1>
         </div>
-        <a id="menu" href="#"></a>
-        <nav>
-            <ul class="navigation">
-                <li><a href="#" class="activePage">Home</a></li>
-                <li><a href="chamber/directory.html">Chamber</a></li>
-                <li><a href="https://github.com/0laf3">GitHub Profile</a></li>
-                <li><a href="www.linkedin.com/in/joaocapindissa">Linkedin</a></li>
-            </ul> 
-        </nav>
+        
     </header>
+    <nav id="animateme">
+        <ul class="navigation">
+            <li><a href="#" class="activePage">Home</a></li>
+            <li><a href="chamber/directory.html">Chamber</a></li>
+            <li><a href="https://github.com/0laf3">GitHub Profile</a></li>
+            <li><a href="www.linkedin.com/in/joaocapindissa">Linkedin</a></li>
+        </ul> 
+    </nav>
     <main>
         <section id="course-work">
             <h2 class="title">Course Work</h2>
@@ -65,9 +71,9 @@
                 <button id="cse">CSE</button>
                 <button id="wdd">WDD</button>
             </div>
+            <div class="container-section" id="courses"></div>
             <p>Credits <strong>Required</strong>: <span id="creditsRequired"></span></p>
-            <div class="container-section" id="courses">
-            </div>
+            <dialog id="course-details"></dialog>
         </section>
     </main>
     <footer>
