@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Huambo Chamber of Commerce is a business chamber that aims to promote  cooperation among businesses in the Huambo.">
+    <meta name="keywords"
+        content="business chamber, Huambo Chamber of Commerce, hcc, chamber of commerce, chamber of commerce Huambo, Huambo Chamber of Commerce, Luanda, Angola">
+    <meta name="author" content="João Sebastião Capindissa">
+    <meta name="og:description"
+        content="Huambo Chamber of Commerce is a business chamber that aims to promote cooperation among businesses in the Huambo.">
+    <meta property="og:title" content="Huambo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://0laf3.github.io/wdd231/chamber/images/hcc-log.png">
+    <meta property="og:url" content="https://0laf3.github.io/wdd231/Chamber/directory.html">
+
+    <meta name="twitter:card"
+        content="Huambo Chamber of Commerce is a business chamber that aims to promote  cooperation among businesses in the Huambo." />
+    <meta name="twitter:site" content="@hcc" />
+    <meta name="twitter:title" content="Huambo Chamber of Commerce" />
+    <meta name="twitter:description"
+        content="Huambo Chamber of Commerce is a business chamber that aims to promote  cooperation among businesses in the Huambo." />
+    <meta name="twitter:image" content="https://0laf3.github.io/wdd231/chamber/images/hcc-log.png" />
+
+    <!-- Link images for android-chrome icon, apple touch and others divices -->
+    <link rel="android-chrome-192x192" href="images/android-chrome-192x192.png">
+    <link rel="android-chrome-512x512" href="images/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+    <title>Huambo Chamber of Commerce</title>
+</head>
+
+<body>
+    
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/hcc-logo-symbol-only-sm.png" alt="Huambo Chamber of Commerce"
+                    height="70" width="70" loading="lazy"></a>
+            <h1>Huambo <span>Chamber of Commerce</span></h1>
+        </div>
+        <button id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="navigation">☰</button>
+        <nav id="navigation" class="collapsed" aria-hidden="true">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Join US</h1>
+            <p>Huambo Chamber of Commerce is a business chamber that aims to promote HCC and cooperation among businesses
+                in the Huambo. We offer different membership levels to suit your business needs. Join us today and
+                become part of a commHCC that supports and promotes local businesses.</p>
+        </section>
+    
+        <div id="membership-cards">
+            <h2>Membership</h2>
+            <p class="sub-heading">Each membership offers different benefits and services. Click "Learn More"
+                 for details.</p>
+            <div id="cards">
+                <div class="card" id="non-profit" data-dialog="modal-np">
+                    <h3>Non-Profit</h3>
+                    <p class="modal-trigger">Learn More</p>
+                </div>
+                <div class="card" id="bronze" data-dialog="dialog-bronze">
+                    <h3>Bronze</h3>
+                    <p class="modal-trigger">Learn More</p>
+                </div>
+                <div class="card" id="silver" data-dialog="dialog-silver">
+                    <h3>Silver</h3>
+                    <p class="modal-trigger">Learn More</p>
+                </div>
+                <div class="card" id="gold" data-dialog="dialog-gold">
+                    <h3>Gold</h3>
+                    <p class="modal-trigger">Learn More</p>
+                </div>
+            </div>
+        </div>
+    
+        <div id="join-form">
+            <h2>Be a Member</h2>
+            <form action="thanks.html" method="get">
+                
+                <p><strong>Required fields are marked with a red left border.</strong></p>
+                <label for="firstName">First Name:
+                    <input type="text" id="firstName" name="firstName" title="Enter your first name"
+                           autocomplete="given-name" required>
+                </label>
+                <br>
+                <label for="lastName">Last Name:
+                    <input type="text" id="lastName" name="lastName" title="Enter your last name" autocomplete="family-name"
+                           required>
+                </label>
+                <br>
+                <label for="organizationTitle">Organizational Title:
+                    <input type="text" id="organizationTitle" name="organizationTitle"
+                           title="Enter your organizational title" autocomplete="organization-title"
+                           pattern="[a-zA-Z-\s]{7,}">
+                </label>
+                <br>
+                <label for="email">Email:
+                    <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email"
+                           placeholder="example@domain.com" required>
+                </label>
+                <br>
+                <label for="mobile">Mobile Phone:
+                    <input type="tel" id="mobile" name="mobile" title="Enter your mobile phone number" autocomplete="tel"
+                           required>
+                </label>
+                <br>
+                <label for="organization">Business/Organization Name:
+                    <input type="text" id="organization" name="organization" title="Enter your business/organization name"
+                           autocomplete="organization" required>
+                </label>
+                <br>
+                <label for="membership">Membership:</label>
+                    <select id="membership" name="membership" title="Select membership level" required>
+                        <option value="" selected disabled>Select Membership</option>
+                        <option value="Non-profit">Non-profit Membership</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+                <br>
+                <label for="description">Business/Organization Description:
+                    <textarea id="description" name="description" title="Describe your business/organization"></textarea>
+                </label>
+                <br>
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+    
+                <label>
+                    <input type="submit" value="Submit">
+                </label>
+            </form>
+        </div>
+    
+        <!-- Dialog Modals -->
+
+
+        <dialog id="modal-np">
+            <h3>Non-Profit (NP) Membership Benefits</h3>
+            <p>The NP Membership is designed for organizations that focus on commHCC service and
+                not-for-profit activities. By joining at this level, you will receive:</p>
+            <ul>
+                <li>Discounted event participation fees</li>
+                <li>Access to networking opportunities with local businesses</li>
+                <li>Inclusion in our member directory</li>
+                <li>Priority registration for volunteer and sponsorship opportunities</li>
+            </ul>
+            <p>Make a difference while connecting with businesses that share your values!</p>
+            <button class="btn-close">Close</button>
+        </dialog>
+    
+        <!-- Bronze Membership Dialog -->
+        <dialog id="dialog-bronze">
+            <h3>Bronze Membership Benefits</h3>
+            <p>The Bronze Membership offers small businesses and startups the chance to grow and gain visibility. Membership
+                includes:</p>
+            <ul>
+                <li>Complimentary listing in the business directory</li>
+                <li>Invitations to monthly business networking events</li>
+                <li>Access to business development resources</li>
+                <li>Discounts on workshops and training programs</li>
+            </ul>
+            <p>Perfect for businesses just getting started and looking to make a mark.</p>
+            <button class="btn-close">Close</button>
+        </dialog>
+    
+        <!-- Silver Membership Dialog -->
+        <dialog id="dialog-silver">
+            <h3>Silver Membership Benefits</h3>
+            <p>Our Silver Membership is tailored for established businesses looking for enhanced support and services.
+                Benefits include:</p>
+            <ul>
+                <li>Priority listing in the business directory</li>
+                <li>Access to exclusive networking events and forums</li>
+                <li>20% discount on chamber-hosted events and sponsorships</li>
+                <li>Business promotion on our website and social media platforms</li>
+            </ul>
+            <p>Ideal for businesses looking to expand their reach and strengthen their local presence.</p>
+            <button class="btn-close">Close</button>
+        </dialog>
+    
+        <!-- Gold Membership Dialog -->
+        <dialog id="dialog-gold">
+            <h3>Gold Membership Benefits</h3>
+            <p>The Gold Membership is our premium level, designed for industry leaders and large organizations. Membership
+                offers:</p>
+            <ul>
+                <li>Top-tier listing in the business directory with a feature spotlight</li>
+                <li>Exclusive access to high-level networking events and private roundtable discussions</li>
+                <li>50% discount on chamber-hosted events, sponsorships, and workshops</li>
+                <li>Customized business promotion plans through our digital and print channels</li>
+            </ul>
+            <p>This membership level is perfect for businesses that want to take a leadership role in the local commerce
+                scene.</p>
+            <button class="btn-close">Close</button>
+        </dialog>
+    
+    </main>
+    <footer>
+        <div id="address-contact">
+            <p><strong>Huambo Chamber of Commerce</strong></p>
+            <p>Huambo Cidade Alta</p>
+            <p>Email: <a href="mailto:hcc@hcc.co.ao">hcc@hcc.co.ao</a></p>
+            <p>Phone: (930) 402-484</p>
+        </div>
+        <div id="social-media">
+
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/4375133_logo_youtube_icon.svg" alt="Youtube" loading="lazy" width="30" height="30"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/icons8-facebook-novo-30.svg" alt="Facebook" loading="lazy" width="30" height="30"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/317749_social_media_tweet_twitter_social_icon.svg" alt="Tweeter" loading="lazy" width="30" height="30"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/317750_linkedin_icon.svg" alt="Linkedin" loading="lazy" width="30" height="30"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/icons8-instagram-30.svg" alt="Instagram" loading="lazy" width="30" height="30"></a>
+
+        </div>
+        <div id="legal">
+            <p>WDD231 Project class</p>
+            <p>João Sebastião Capindissa</p>
+            <p>&copy; <span id="currentYear"></span> Huambo Chamber of Commerce</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

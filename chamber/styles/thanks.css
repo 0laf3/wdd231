@@ -1,0 +1,13 @@
+#thankyou {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    /*text-align: center;*/
+}
+
+#form-info {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px var(--black-shadow);
+}
