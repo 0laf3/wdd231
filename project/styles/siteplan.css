@@ -1,0 +1,140 @@
+@import url(//db.onlinewebfonts.com/c/0923ee644c97a87d70269aa80a6f1e79?family=The+Historia+Demo); 
+@font-face {font-family: "The Historia Demo"; src: url("//db.onlinewebfonts.com/t/0923ee644c97a87d70269aa80a6f1e79.eot"); src: url("//db.onlinewebfonts.com/t/0923ee644c97a87d70269aa80a6f1e79.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0923ee644c97a87d70269aa80a6f1e79.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0923ee644c97a87d70269aa80a6f1e79.woff") format("woff"), url("//db.onlinewebfonts.com/t/0923ee644c97a87d70269aa80a6f1e79.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0923ee644c97a87d70269aa80a6f1e79.svg#The Historia Demo") format("svg"); }
+
+@import url(//db.onlinewebfonts.com/c/9a2bc11be56851dde98c1b49302cc21a?family=Gotham+Medium);
+@font-face {font-family: "Gotham Medium"; src: url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.eot"); src: url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.woff") format("woff"), url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.svg#Gotham Medium") format("svg"); }/*Start global*/
+
+:root {
+    --font-families: "Gotham Medium", "The Historia Demo","sans-serif";
+   
+    /* colors */
+    --primary-color:  #1e1e35e8; 
+    --secondary-color: #c5c5c5;
+  
+  
+    /* sizes */
+    --font-size: 10px;
+
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: var(--title-font);
+    background-color: var(--secondary-color);
+    color: #01172F;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-family: "The Historia Demo";
+}
+
+
+footer {
+    font-size: var(--font-base);
+    color: var(--primary-color);
+    background-color:  var(--secondary-color);
+    padding: var(--padding);
+    text-align: center;
+}
+
+h2{
+  font-size: 45px;
+  color: var(--primary-color);
+  padding: 1rem 1rem 1rem 2rem;
+  font-family: "Gotham Medium";
+
+}
+
+p{
+  padding: 1rem 1rem 1rem 3rem;
+ 
+}
+
+section{
+  margin-bottom: 2.5rem;
+  padding: 1rem 1rem 1rem 0;
+}
+
+#header-separator{
+  height: 0.5rem;
+}
+
+
+#scenarios{
+  text-align: left;
+}
+
+#scenarios ul{
+  list-style-type:none;
+  padding: 1rem 1rem 1rem 0rem;
+  margin: 0 auto 2rem auto;
+  width: fit-content;
+  text-align: left;
+
+}
+#color-schema li{
+  display:  inline-flex;
+}
+
+.color{
+  width: 50px;
+  height: 50px;
+}
+#primary-color{
+  background-color: var(--primary-color);
+}
+#secondary-color{
+  background-color: var(--secondary-color);
+}
+
+#tertiary-color{
+  border-style: solid;
+}
+
+
+#light-color{
+  border-style: solid;
+}
+
+
+#typography{
+  text-align: center;
+  margin: 0 auto;
+}
+
+#typography ul{
+  list-style: none;
+}
+
+#title-fonts{
+  
+  font-size: 1.6rem;
+  
+}
+#heading-fonts{
+ 
+  font-size: 1.3rem; 
+}
+#sub-heading-fonts{
+  font-size: 1rem;
+}
+#plain-text{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  
+}
+
+#wireframes{
+  margin: 20px;
+  text-align: center;
+}
+
+picture{
+    margin: 0 auto;
+    height: auto;
+    padding: 10px;
+}
